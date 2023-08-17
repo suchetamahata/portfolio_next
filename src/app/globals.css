@@ -1,27 +1,253 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.headerul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-weight: 500;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.bodydiv{
+  display: flex;
+  justify-content: space-around;
+  margin: 8vw;
+  margin-bottom: none;
+}
+
+.image2{
+  width: 32vw;
+}
+.suchetaImg{
+  height: 35vh;
+  width: 15vw;
+  border-radius: 50%;
+}
+
+.resumebtn{
+  background-color: #C961DE;
+  border-radius: 2%;
+  color: white;
+  border-style: none;
+  height: 2.5rem;
+  padding:  .5rem 1rem;
+  font-size: medium;
+  font-weight: 500;
+  margin: 1rem;
+}
+.resumebtn:hover{
+  cursor: pointer;
+}
+
+.introp{
+  font-size:larger;
+  padding: 1rem;
+}
+
+.expdiv{
+  height: 50rem;
+}
+.carouseldiv{
+  margin-top: -16vw;
+}
+.carouselchild{
+  height: 70vh;
+  width: 80vw !important;
+  background-color:rgb(45, 9, 80);
+  color:  white;
+  display: flex;
+  justify-content: space-around;
+  padding: 2vw;
+  background-image: './utils/picturesAndIcons/halfPlanet.svg';
+  margin: 6vw;
+  margin-top: none;
+}
+
+.imageCarousel{
+  height: 30vh;
+  width:auto;
+  margin: 10vw;
+  margin-left: 20vw;
+}
+.carouselp{
+  font-size: 1.5rem;
+}
+
+.skillsimg{
+  border-color: rgb(17, 10, 66);
+  border-width: 1vw;
+  border-style: solid;
+  height: 80vh;
+  width: 60vw;
+  margin-top: 5vw;
+}
+
+.divskills{
+  display: flex;
+  justify-content: center;
+}
+
+.linkheader{
+  text-decoration: none;
+  color:white;
+}
+
+.contactul{
+  display: flex;
+  justify-content:space-around;
+  list-style: none;
+  font-weight: 500;
+}
+
+.second{
+  height: 4vh;
+  width: 2.5vw;
+}
+
+.imageandul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.messagediv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.messagesubdiv{
+  background-color: #4a4a77;
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  padding: 2vw;
+  height: 70vh;
+}
+
+.imgform{
+  height: 75vh
+}
+
+.inputBox1{
+  width: 30vw;
+  height: 4vh;
+  padding: 0.5rem;
+  background-color: #64648f;
+  color:rgb(254, 252, 252);
+  border-style: none;
+  border-radius: 3%;
+  margin: 1.1rem;
+}
+
+.inputBox2{
+  height: 8vh;
+}
+
+.buttonform{
+  padding: 1vw;
+  background-color: #73579f;
+  border-color: #64648f;
+  border-radius: 5%;
+  color:white;
+  font-size: large;
+}
+.buttonform:hover{
+  cursor: pointer;
+}
+
+::placeholder{
+  color: white
+}
+
+body{
+  background:rgb(0, 0, 33);
+  font-family: 'Poppins', sans-serif;
+  color:rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
+
+@media (max-width: 1350px) {
+  .messagesubdiv{
+    flex-wrap: wrap;
+    width: 90vw
+  }
+  .imgform{
+    display: none;
+  }
+  .smallimg{
+    height: 50vh
+  }
+  .imageCarousel{
+    margin: none;
+    width: 60vw
+  }
+  .carouselchild{
+    width: 90vw;
+    margin: none;
+    font-size: 2vw;
+  }
+  .carouselp{
+    font-size: 2vw;
+  }
+  .suchetaImg{
+    width: 40vw;
+  }
+  .skillsimg{
+    height:40vh
+  }
+  body{
+    font-size: 2vw;
+  }
+  br {
+    display: none;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media(max-width: 750px){
+  .image2{
+    display: none;
+  }
+  .suchetaImg{
+    height: 30vh;
+    margin-left: 15vw;
+  }
+  .bodydiv{
+   margin-left: 20vw;
+  }
+  .resumebtn{
+    margin: 3vw;
+  }
+  .contactul{
+    flex-wrap: wrap;
+  }
+  .second{
+    width: 10vw;
+  }
+  .buttonform{
+    margin-left: 30vw;
+  }
+  .carouselchild{
+    height: 70vh;
+    width: 95vw;
+    font-size: 4vw;
+  }
+  .imageCarousel{
+    height: 25vh;
+    margin: auto;
+  }
+  body{
+    font-size: 4vw;
+  }
+  .carouselp{
+    font-size: 4vw;
+  }
+  .carouseldiv{
+    margin-top: 1vw;
+  }
+  .skillsimg{
+    height: 25vh;
+    width: 65vw;
+    margin:2vw
+  }
+  .smallimg{
+    height: 20vh;
+  }
 }
