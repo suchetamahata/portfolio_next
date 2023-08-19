@@ -1,4 +1,6 @@
-
+.html{
+  width:100%
+}
 .headerul{
   display: flex;
   justify-content: space-around;
@@ -111,18 +113,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
 }
 .messagesubdiv{
   background-color: #4a4a77;
   display: flex;
   justify-content: space-between;
-  width: 60vw;
+  margin: 0 20vw;
   padding: 2vw;
   height: 70vh;
 }
 
 .imgform{
-  height: 75vh
+  height: 70vh
 }
 
 .inputBox1{
@@ -137,16 +141,16 @@
 }
 
 .inputBox2{
-  height: 8vh;
+  height: 6vh;
 }
 
 .buttonform{
-  padding: 1vw;
-  background-color: #73579f;
-  border-color: #64648f;
+  background-color: #027532;
+  border-color: #dcdce9;
   border-radius: 5%;
-  color:white;
-  font-size: large;
+  color:rgb(164, 249, 163);
+  width: 10vw;
+  height: 4vh;
 }
 .buttonform:hover{
   cursor: pointer;
@@ -205,15 +209,12 @@ body{
   .image2{
     display: none;
   }
-  .suchetaImg{
-    height: 30vh;
-    margin-left: 15vw;
-  }
   .bodydiv{
-   margin-left: 20vw;
-  }
-  .resumebtn{
-    margin: 3vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: './utils/picturesAndIcons/bottomrightimage.svg';
+   text-align: center;
   }
   .contactul{
     flex-wrap: wrap;
@@ -222,7 +223,7 @@ body{
     width: 10vw;
   }
   .buttonform{
-    margin-left: 30vw;
+    width: auto;    
   }
   .carouselchild{
     height: 70vh;
@@ -248,6 +249,6 @@ body{
     margin:2vw
   }
   .smallimg{
-    height: 20vh;
+    height: 30vh;
   }
 }

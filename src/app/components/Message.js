@@ -44,9 +44,11 @@ const Message = () => {
             <div className='messagesubdiv'>
             <div >
                 <h1>Get in touch</h1>
-                <p> I would love to connect with you. Be it a job offer or <br />
-                    just conversations on common interests, do not hesitate.<br />
-                    You can fill out this form if you want me to reach out to you.<br /></p>
+                <p> I would love to connect with you.<br /> 
+                    Be it a job offer or just conversations<br />
+                    on common interests, do not hesitate.<br />
+                    Fill out this form if you want me to<br />
+                    reach out to you.<br /></p>
                 <Image src={formImage} className='imgform' alt='illustration'/>
             </div>
             <div>
@@ -54,7 +56,7 @@ const Message = () => {
                 <input placeholder='Email' className='inputBox1' onChange={emailChangeHandle} />
                 <input placeholder='Subject' className='inputBox1' onChange={subjectChangeHandle} />
                 <input placeholder='Your Message' className='inputBox1 inputBox2' onChange={messageChangeHandle} /><br/>
-                <button className='buttonform' onClick={buttonClickHandle}> Send Message </button>
+                <button className='buttonform' onClick={buttonClickHandle}> Send </button>
             </div>
             </div>
         </div>
