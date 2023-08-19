@@ -73,6 +73,10 @@
   font-size: 1.5rem;
 }
 
+.divskills{
+  display: flex;
+  justify-content: space-between;
+}
 .skillsimg{
   border-color: rgb(17, 10, 66);
   border-width: 1vw;
@@ -185,7 +189,7 @@ body{
   }
   .carouselchild{
     width: 90vw;
-    margin: none;
+    margin: 5vw;
     font-size: 2vw;
   }
   .carouselp{
@@ -244,11 +248,27 @@ body{
     margin-top: 1vw;
   }
   .skillsimg{
-    height: 25vh;
-    width: 65vw;
+    height: 35vh;
+    width: 75vw;
     margin:2vw
   }
   .smallimg{
-    height: 30vh;
+    height: 60vh;
+  }
+  .messagesubdiv{
+    margin: 0 10vw;
+    height: 75vh
+  }
+  .inputBox1{
+    width: 55vw
+  }
+  .buttonform{
+    width: 30vw;
+    margin-left: 10vw;
+  }
+  .divskills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
