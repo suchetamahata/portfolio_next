@@ -7,4 +7,4 @@ const messageSchema = new mongoose.Schema({
     messagetext: String
 })
 
-export default  mongoose.models.message || mongoose.model('message',messageSchema)
+export default  mongoose.models.message ||mongoose.model('message',messageSchema)

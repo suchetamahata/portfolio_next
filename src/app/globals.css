@@ -58,7 +58,7 @@
   display: flex;
   justify-content: space-around;
   padding: 2vw;
-  background-image: './utils/picturesAndIcons/halfPlanet.svg';
+  background-image: url('./utils/picturesAndIcons/halfPlanet.svg');
   margin: 6vw;
   margin-top: none;
 }
@@ -127,6 +127,8 @@
   margin: 0 20vw;
   padding: 2vw;
   height: 70vh;
+  color:rgb(219, 177, 219);
+
 }
 
 .imgform{
@@ -137,7 +139,7 @@
   width: 27vw;
   height: 4vh;
   padding: 0.5rem;
-  background-color: #64648f;
+  background-color: #816faa;
   color:rgb(254, 252, 252);
   border-style: none;
   border-radius: 3%;
@@ -149,12 +151,12 @@
 }
 
 .buttonform{
-  background-color: #027532;
-  border-color: #dcdce9;
+  background-color: #775c93;
+  border-color: #f7f7f9;
   border-radius: 5%;
-  color:rgb(164, 249, 163);
   width: 10vw;
   height: 4vh;
+  color: #f4f2f8;
 }
 .buttonform:hover{
   cursor: pointer;
@@ -217,7 +219,7 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   background-image: './utils/picturesAndIcons/bottomrightimage.svg';
+   background-image: url('./utils/picturesAndIcons/bottomrightimage.svg');
    text-align: center;
   }
   .contactul{
@@ -254,10 +256,13 @@ body{
   }
   .smallimg{
     height: 60vh;
+    width:50vw;
   }
   .messagesubdiv{
     margin: 0 10vw;
-    height: 75vh
+    height: 75vh;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHrNUlYED1n4x6pCDUfwJ4OXvksPkq12S9gKZ1Be8Dkga4UZPF611sQSwTKVwqBKfrx8&usqp=CAU');
+    background-size: contain;
   }
   .inputBox1{
     width: 55vw
@@ -270,5 +275,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('./utils/picturesAndIcons/bottomrightimage.svg');
   }
 }

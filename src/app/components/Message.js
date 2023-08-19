@@ -1,5 +1,7 @@
 "use client";
 import Image from 'next/image'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { useState } from 'react'
 import formImage from '../utils/picturesAndIcons/formIcon.svg'
@@ -32,10 +34,11 @@ const Message = () => {
             });
 
             const result = await response.json();
-            alert("Message sent to Sucheta :) ");
-            console.log(result)
+            toast("Message sent to Sucheta :)")
+            setMessage({ name: '', email: '', subject: '', messagetext: '' })
         } catch (error) {
             console.error("Error:", error);
+            toast("Oopsy, try again later or mail me")
         }
     }
 
@@ -48,7 +51,7 @@ const Message = () => {
                     Be it a job offer or just conversations<br />
                     on common interests, do not hesitate.<br />
                     Fill out this form if you want me to<br />
-                    reach out to you.<br /></p>
+                    reach out to you <br /></p>
                 <Image src={formImage} className='imgform' alt='illustration'/>
             </div>
             <div>
@@ -57,6 +60,7 @@ const Message = () => {
                 <input placeholder='Subject' className='inputBox1' onChange={subjectChangeHandle} />
                 <input placeholder='Your Message' className='inputBox1 inputBox2' onChange={messageChangeHandle} /><br/>
                 <button className='buttonform' onClick={buttonClickHandle}> Send </button>
+                <ToastContainer position="top-center" theme="dark" />
             </div>
             </div>
         </div>

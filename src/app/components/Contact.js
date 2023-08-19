@@ -7,7 +7,7 @@ import mail from '../utils/picturesAndIcons/gmail.png'
 
 const Contact = () => {
     return (
-        <div id='contact' >
+        <div id='contact' className='contactdiv'>
             <div><hr></hr></div>
             <div>
                 <div>

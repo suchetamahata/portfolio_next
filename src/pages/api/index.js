@@ -6,7 +6,7 @@ dotenv.config()
 
 export default async function handler(req, res) {
   try {
-    mongoose.connect( process.env.MON_URI || '',
+    mongoose.connect( 'mongodb+srv://nosuchetamahatano:moonstars96@cluster0.k0urpm5.mongodb.net/',
       {
         useNewUrlParser: true,
         useUnifiedTopology: true
@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     })
   } catch (error) {
     console.error(error);
-    res.sendStatus(500)
+    res.status(500)
   }
 }
 
