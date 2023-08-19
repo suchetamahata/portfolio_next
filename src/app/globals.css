@@ -9,7 +9,7 @@
 .bodydiv{
   display: flex;
   justify-content: space-around;
-  margin: 12vw;
+  margin: 12vw !important ;
   margin-bottom: none;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .inputBox1{
-  width: 30vw;
+  width: 27vw;
   height: 4vh;
   padding: 0.5rem;
   background-color: #64648f;
