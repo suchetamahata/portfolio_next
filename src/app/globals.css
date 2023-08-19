@@ -9,7 +9,7 @@
 .bodydiv{
   display: flex;
   justify-content: space-around;
-  margin: 8vw;
+  margin: 12vw;
   margin-bottom: none;
 }
 
@@ -164,7 +164,7 @@ body{
 }
 
 
-@media (max-width: 1350px) {
+@media (max-width: 1000px) {
   .messagesubdiv{
     flex-wrap: wrap;
     width: 90vw
