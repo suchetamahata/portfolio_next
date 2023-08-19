@@ -45,7 +45,7 @@ const Message = () => {
             <div >
                 <h1>Get in touch</h1>
                 <p> I would love to connect with you. Be it a job offer or <br />
-                    just conversations on common interests, don't hesitate.<br />
+                    just conversations on common interests, do not hesitate.<br />
                     You can fill out this form if you want me to reach out to you.<br /></p>
                 <Image src={formImage} className='imgform' alt='illustration'/>
             </div>
